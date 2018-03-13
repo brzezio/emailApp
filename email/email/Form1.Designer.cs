@@ -33,6 +33,7 @@
             this.labelTo = new System.Windows.Forms.Label();
             this.textBoxSubject = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.progressBarSend = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // buttonSend
@@ -77,11 +78,19 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Subject:";
             // 
+            // progressBarSend
+            // 
+            this.progressBarSend.Location = new System.Drawing.Point(264, 286);
+            this.progressBarSend.Name = "progressBarSend";
+            this.progressBarSend.Size = new System.Drawing.Size(118, 19);
+            this.progressBarSend.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(630, 334);
+            this.Controls.Add(this.progressBarSend);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSubject);
             this.Controls.Add(this.labelTo);
@@ -101,6 +110,7 @@
         private System.Windows.Forms.Label labelTo;
         private System.Windows.Forms.TextBox textBoxSubject;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar progressBarSend;
     }
 }
 
