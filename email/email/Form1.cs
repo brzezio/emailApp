@@ -21,14 +21,6 @@ namespace email
         {
             try
             {
-                Load("lastKnownEmailAdress");
-            }
-            catch(Exception)
-            {
-
-            }
-            try
-            {
                 userID = System.IO.File.ReadAllLines(@"userID");
             }
             catch (Exception e)
@@ -47,6 +39,14 @@ namespace email
                 MessageBox.Show("Plik userID.txt nie jest kompletny!","Error");
             }
             InitializeComponent();
+            try
+            {
+                Load("lastKnownEmailAdress");
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
